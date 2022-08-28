@@ -5,12 +5,12 @@ public class Cuenta {
 	private String numeroDeCuenta;
 	private Boolean estadoDeCuenta;
 	private Double saldo;
-	private Integer clave;
+	private int clave;
 	private String banco;
 	private Tarjeta tarjeta;
 
 	
-	public Cuenta(String numeroDeCuenta, Integer clave, String banco) {
+	public Cuenta(String numeroDeCuenta, int clave, String banco) {
 		super();
 		this.numeroDeCuenta = numeroDeCuenta;
 		this.clave = clave;
@@ -55,6 +55,12 @@ public class Cuenta {
 
 	public void setBanco(String banco) {
 		this.banco = banco;
+	}
+
+	@Override
+	public String toString() {
+		return "Cuenta [numeroDeCuenta=" + numeroDeCuenta + ", estadoDeCuenta=" + estadoDeCuenta + ", saldo=" + saldo
+				+ ", clave=" + clave + ", banco=" + banco + ", tarjeta=" + tarjeta + "]";
 	}
 	
 	
